@@ -1,0 +1,21 @@
+{
+  "name": "searchcep",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "next": "9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-input-mask": "^3.0.0-alpha.2",
+    "sass": "^1.26.11",
+    "styled-components": "^5.2.0",
+    "sweetalert2": "^10.3.5",
+    "tailwindcss": "^1.8.10"
+  }
+}
