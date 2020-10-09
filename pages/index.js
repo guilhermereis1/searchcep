@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import api from "./Services/api";
 import InputMask from "react-input-mask";
 import Card from "./_Card";
 import Swal from "sweetalert2";
@@ -28,9 +27,13 @@ export default function Home() {
     if (cep) {
       setLoading(true);
       try {
-        const response = await api.get(`/${cep}`);
+        const response = await fetch(
+          `https://cep.awesomeapi.com.br/json/${cep}`
+        );
+        const dataCep = await response.json();
+
         setLoading(false);
-        setResponse(response.data);
+        setResponse(dataCep);
 
         Toast.fire({
           icon: "success",
