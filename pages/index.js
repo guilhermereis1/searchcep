@@ -15,6 +15,7 @@ export default function Home() {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-end",
+      text: 'CEP encontrado com sucesso!',
       showConfirmButton: false,
       timer: 3000,
       timerProgressBar: true,
